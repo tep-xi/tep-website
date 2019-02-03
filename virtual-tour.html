@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!-- Sets viewport-based formatting, for different window sizes. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Link to hamburger icon for compressed navigation bar. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="tep-website.css">
+
+<title>tEp: Xi Fellowship</title>
+
+<!-- Makes all navigation bar links responsive. -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    
+    <a href="front-page.html">Home</a>
+    <a href="rush-events.html">Rush</a>
+    <a href="contact-us.html">Contact</a>
+    <a href="virtual-tour.html" class="active">Tour</a>
+    <a href="the-gospel.html">The Gospel</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div style="padding-left: 1em; padding-right: 1em;">
+    <div class="flex-container">
+      
+      <div class="flex-item">
+	<img src="xiohazard.png" class="top-img"></img>
+      </div>
+      
+      <div class="flex-item page-title">
+	Virtual Tour
+      </div>
+      
+      <div class="flex-item page-text">
+	<p>
+	  You’ve heard stories about tEp: a.k.a. the purple palace,
+	  the last stronghold of the knights of the lambda calculus,
+	  the U.S.S. Birthday Ship. You’ve been meaning to get over
+	  there to see what it’s all about.
+	</p>
+	<p>
+	  But, you are lazy. Instead, you went to the tEp website and opted for
+	  the virtual house tour. We understand.
+	<p>
+	</p>
+	  This site brings you to such a virtual house tour. It is a multimedia
+	  text adventure game. But, while you can interact with the tour
+	  conventionally using the keyboard, you can also click on the links and
+	  the purple map, which will automatically type the corresponding
+	  command for you.
+	<p>
+	</p>
+	  For your tour, we are providing you with Irving Q. Tep, the spirit of
+	  the house. He’ll be giving you the descriptions and stories you will
+	  read during your tour.
+	</p>
+      </div>
+
+      <div class="flex-item info-banner page-text">
+	<p style="text-align: center"><a href="#tep-tour">I want to go on the tour!</a></p>
+      </div>
+      
+    </div>
+  </div>
+</body>

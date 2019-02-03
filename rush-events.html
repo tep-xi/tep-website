@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<!-- Sets viewport-based formatting, for different window sizes. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Link to hamburger icon for compressed navigation bar. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="tep-website.css">
+
+<title>tEp: Xi Fellowship</title>
+
+<!-- Makes all navigation bar links responsive. -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    
+    <a href="front-page.html">Home</a>
+    <a href="rush-events.html" class="active">Rush</a>
+    <a href="contact-us.html">Contact</a>
+    <a href="virtual-tour.html">Tour</a>
+    <a href="the-gospel.html">The Gospel</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div style="padding-left: 1em; padding-right: 1em;">
+    <div class="flex-container">
+      
+      <div class="flex-item">
+	<img src="xiohazard.png" class="top-img"></img>
+      </div>
+      
+      <div class="flex-item page-title">
+	Rush Events
+      </div>
+      
+      <div class="flex-item info-banner page-text">
+	<p><b>Want to know more about joining tEp?</b>
+	  Feel free to email
+	  <a href="mailto:tep-rushchair@mit.edu?Subject=I%20have%20rush%20questions!"
+	     target="_top"> tep-rushchair@mit.edu</a>
+	  with questions!</p>
+      </div>
+
+      <div class="flex-item page-text">
+	<p>
+	  Check back later this spring to see our 2019 CPW events!
+	</p>
+      </div>
+      
+    </div>
+  </div>
+</body>
