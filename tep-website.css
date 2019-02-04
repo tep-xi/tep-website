@@ -1,9 +1,11 @@
+/* Sets font site-wide, and background (border) color. */
 body {
   margin: 0;
   font-family: "Lucida Console", Monaco, monospace;
   background: #ddd;
 }
 
+/* Collapsibles inherit their parent font and size. */
 button {
     font-family : inherit;
     font-size: 1em;
@@ -19,19 +21,23 @@ h {
     color: purple;
 }
 
+/* Link color. */
 a {
     color: orangered;
 }
 
+/* Add bottom padding to lists so that it isn't too close to following text. */
 li {
     padding-bottom: 10px;
 }
 
+/* Main color of navigation bar. */
 .topnav {
   overflow: hidden;
   background-color: #333;
 }
 
+/* More navigation bar formatting. */
 .topnav a {
   float: left;
   display: block;
@@ -42,11 +48,13 @@ li {
   font-size: 17px;
 }
 
+/* Hover color of navigation bar links. */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
+/* Color of the button for the current page on the nav bar. */
 .active {
   background-color: purple;
   color: white;
@@ -56,6 +64,7 @@ li {
   display: none;
 }
 
+/* The flex container blocks out the main vertical content of the page. Read https://css-tricks.com/snippets/css/a-guide-to-flexbox/ to learn more about flexbox. */
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -66,12 +75,14 @@ li {
   background: #f2f2f2;
 }
 
+/* Flex items are things inside of the flex container. */
 .flex-item {
   padding-left: 16px;
   padding-right: 16px;
   color: #333;
 }
 
+/* Formatting for images at the top of each page. */
 .top-img {
   padding: 16px;
   display: block;
@@ -96,6 +107,7 @@ li {
     background: #ddd;
 }
 
+/* Formatting for collapsibles (see the-gospel.html). */
 .collapsible {
   background-color: #f2f2f2;
   color: purple;
@@ -112,6 +124,7 @@ li {
   background-color: #ddd;
 }
 
+/* Formatting for content inside of collapsible drop-downs. */
 .content {
   padding: 0 18px;
   display: none;
@@ -120,6 +133,7 @@ li {
   font-size: 15px;
 }
 
+/* Handles formatting for compressed screen sizes/mobile devices. */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
