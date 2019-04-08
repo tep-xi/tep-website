@@ -55,10 +55,47 @@ function myFunction() {
       </div>
 
       <div class="flex-item page-text">
-	<p>
-	  Check back later this spring to see our 2019 CPW events!
-	</p>
-      </div>
+
+	<!-- ---------------------------------------------------------------------- -->
+
+	<!-- Rush Event updating instructions: 
+	     1. Make a stand-alone <p>DATE</p> line for each day of Rush/CPW.
+	     2. Copy the entire block of code inside EVENT-START to EVENT-END and paste 
+	     it below the correct DATE line once for each event on that date. Edit the 
+	     event title and the text accordingly.
+	  -->
+	
+	<!-- DATE -->
+	<p>Thursday, April 11th</p>
+
+	<!-- EVENT-START -->
+	<button class="flex-item collapsible">12:00PM - 2:00PM | Event Title</button>
+	<div class="content">
+	  <p>
+	    Event description goes here.
+	  </p>
+	</div>
+	<!-- EVENT-END -->
+
+	<!-- ---------------------------------------------------------------------- -->
+	
+	<!-- Script for making collapsibles work. -->
+	<script>
+	  var coll = document.getElementsByClassName("collapsible");
+	  var i;
+
+	  for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+			  this.classList.toggle("active-collapsible");
+			  var content = this.nextElementSibling;
+			  if (content.style.display === "block") {
+			  content.style.display = "none";
+			  } else {
+			  content.style.display = "block";
+			  }
+			  });
+			  }
+			  </script>
       
     </div>
   </div>
