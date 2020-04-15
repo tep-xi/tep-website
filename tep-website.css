@@ -95,7 +95,7 @@ li {
 .page-title {
   color: purple;
   font-size: 2em;
-  padding-bottom: 16px;
+  padding: 16px;
 }
 
 .page-text {
