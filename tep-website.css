@@ -76,6 +76,11 @@ li {
   display: none;
 }
 
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 /* The flex container blocks out the main vertical content of the page. Read https://css-tricks.com/snippets/css/a-guide-to-flexbox/ to learn more about flexbox. */
 .flex-container {
   display: flex;
@@ -97,11 +102,11 @@ li {
 /* Formatting for images at the top of each page. */
 .top-img {
   padding: 16px;
-  display: block;
+  /*display: block;*/
   margin-left: auto;
   margin-right: auto;
-  max-width: 20vw;
-  max-height: 20vh;
+  max-width: 30vw;
+  max-height: 30vh;
 }
 
 .page-title {
@@ -143,6 +148,9 @@ li {
   overflow: hidden;
   background-color: #ddd;
   font-size: 15px;
+}
+img {
+    image-orientation: none;
 }
 
 /* Handles formatting for compressed screen sizes/mobile devices. */
