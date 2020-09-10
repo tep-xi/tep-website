@@ -137,7 +137,20 @@ li {
   font-size: 15px;
 }
 
-.active-collapsible, .collapsible:hover {
+/* For non-collapsibles which point to link (e.g. Kathleen's blog post) */
+.gospel-entry {
+  background-color: #f2f2f2;
+  color: purple;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active-collapsible, .collapsible:hover, .gospel-entry:hover {
   background-color: #ddd;
 }
 
