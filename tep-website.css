@@ -105,8 +105,8 @@ li {
   /*display: block;*/
   margin-left: auto;
   margin-right: auto;
-  max-width: 30vw;
-  max-height: 30vh;
+  max-width: 40vw;
+  /*max-height: 30vh;*/
 }
 
 .page-title {
